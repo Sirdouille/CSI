@@ -1,0 +1,164 @@
+Zone "Buttons"
+	SelectedTrackNavigator
+
+	// Modifiers
+	ShiftRight   Shift
+	ShiftLeft    Shift
+	Pan 		 		 Alt
+	Zoom         Option
+	Scroll 		 	 Control
+
+	Track        GoZone "Home"
+	//Plugin       MapTrackSendsSlotToWidgets { 0 0 20  0 0 127 } // Show all receives
+	Plugin       MapSelectedTrackReceivesToWidgets { 0 0 20  0 0 127 }
+	Send         MapSelectedTrackSendsToWidgets { 0 0 20  0 0 127 }
+
+	Channel            Reaper "_S&M_WNMAIN" // Focus on main window
+	Bank               Reaper "40345"      // Reset all MIDI notes
+	Master             Reaper "40078" // Show Hide Mixer Window
+	Click              Reaper "40364"
+	Hold+Click         Reaper "40363"
+	Section 		   Reaper "41152" // Toggle view all envelopes for all tracks
+	Marker             Reaper "40157" // Insert marker at current position
+	Hold+Marker        Reaper "40613" // Delete marker at cursor
+
+	Cycle        Reaper "1068"
+	Rewind	     Reaper "40084"
+	FastForward	 Reaper "40085"
+	Stop         Stop
+	Play         Play
+	Record       Record
+	Shift+Record NoAction // Prevent triggering recording with shift modifier
+												// enabled, as pressing stop would then delete media
+	Shift+Stop   Reaper "40668" // Stop and delete media
+	Hold+Stop    Reaper "40042"      // Go to start of project
+
+	Prev         Reaper "40416" // Select previous item
+	Next         Reaper "40417" // Select next item
+
+	Shift+Prev Reaper "_S&M_WNONLY1" // Show previous fx and hide others
+	Shift+Next Reaper "_S&M_WNONLY2" // Show next fx and hide others
+
+	Control+Prev Reaper "40172" // Next marker
+	Control+Next Reaper "40173" // Previous marker
+
+	Read         TrackAutoMode 1 { 0 4 0  0 96 0 }
+	Write        TrackAutoMode 3 { 4 0 0  127 0 0 }
+	Trim         TrackAutoMode 0 { 1 3 3  127 127 127 }
+	Touch        TrackAutoMode 2 { 2 3 0  112 112 00 }
+	Latch        TrackAutoMode 4 { 4 0 4  96 0 96 }
+	Off          TrackAutoMode 5 { 0 0 10 0 32 127 }
+
+
+	// Move Cursor
+	RotaryBigLeft      Reaper "40104"
+	RotaryBigLeftMid   Reaper "41666"
+	RotaryBigLeftFast  Reaper "41043"
+	RotaryBigRight     Reaper "40105"
+	RotaryBigRightMid  Reaper "41667"
+	RotaryBigRightFast Reaper "41042"
+
+	RotaryBigPush Reaper "_54a3ea39023943a997a1dcb1a086bd8d" // Zoom to fit all
+	// Custom Action : SWS:Save current track selection
+	//								 Select all tracks
+	//								 SWS:Save select tracks(s) items' state
+	//								 Select all items
+	//								 SWS:zoom to selected items
+	//								 SWS: Restore selected track(s) items' state
+	//								 Unselect (clear selection of) all tracks
+	//								 SWS:Restore saved track selection
+
+	// Zooming (Option is set to be the Zoom button)
+	// Horizontal Zooming
+	Option+RotaryBigLeft      Reaper "1011"
+	Option+RotaryBigLeftMid   Reaper "1011"
+	Option+RotaryBigLeftFast  Reaper "1011"
+	Option+RotaryBigRight     Reaper "1012"
+	Option+RotaryBigRightMid  Reaper "1012"
+	Option+RotaryBigRightFast Reaper "1012"
+
+	// Vertical Zooming
+	Shift+Option+RotaryBigLeft      Reaper "41326"
+	Shift+Option+RotaryBigLeftMid   Reaper "41326"
+	Shift+Option+RotaryBigLeftFast  Reaper "41326"
+	Shift+Option+RotaryBigRight     Reaper "41325"
+	Shift+Option+RotaryBigRightMid  Reaper "41325"
+	Shift+Option+RotaryBigRightFast Reaper "41325"
+
+	// Scrolling (Control is set to be the Scroll button)
+	// Horizontal Scrolling
+	Control+RotaryBigLeft Reaper "40140"
+	Control+RotaryBigLeftMid Reaper "40140"
+	Control+RotaryBigLeftFast Reaper "40140"
+	Control+RotaryBigRight     Reaper "40141"
+	Control+RotaryBigRightMid  Reaper "40141"
+	Control+RotaryBigRightFast Reaper "40141"
+
+	// Vertical Scrolling
+	Control+Shift+RotaryBigLeft Reaper "40138"
+	Control+Shift+RotaryBigLeftMid Reaper "40138"
+	Control+Shift+RotaryBigLeftFast Reaper "40138"
+	Control+Shift+RotaryBigRight     Reaper "40139"
+	Control+Shift+RotaryBigRightMid  Reaper "40139"
+	Control+Shift+RotaryBigRightFast Reaper "40139"
+
+	// Center Cursor
+	Control+RotaryBigPush Reaper "40513"
+
+	Shift+Read   GlobalAutoMode "1" { 0 4 0  0 96 0 }
+	Shift+Write  GlobalAutoMode "3" { 4 0 0  127 0 0 }
+	Shift+Trim   GlobalAutoMode "0" { 1 3 3  127 127 127 }
+	Shift+Touch  GlobalAutoMode "2" { 2 3 0  112 112 00 }
+	Shift+Latch  GlobalAutoMode "4" { 4 0 4  96 0 96 }
+	Shift+Off    GlobalAutoMode "5" { 0 0 10 0 32 127 }
+
+	//Alt+Read     Reaper "40086" { 0 4 0  0 96 0 }
+	//Alt+Write    Reaper "40090" { 4 0 0  127 0 0 }
+	//Alt+Trim     Reaper "40088" { 1 3 3  127 127 127 }
+	//Alt+Touch    Reaper "40087" { 2 3 0  112 112 00 }
+	//Alt+Latch    Reaper "40266" { 4 0 4  96 0 96 }
+	//Alt+Off      Reaper "42024" { 0 0 10 0 32 127 }
+
+	RotarySmallLeft       TrackBank "-1"
+	RotarySmallRight      TrackBank "1"
+	RotarySmallLeftMid    TrackBank "-4"
+	RotarySmallRightMid   TrackBank "4"
+	RotarySmallLeftFast   TrackBank "-8"
+	RotarySmallRightFast  TrackBank "8"
+
+	// Set the small knob to control the master track volume
+	Shift+RotarySmallLeft  Reaper "40744"
+	Shift+RotarySmallLeftMid Reaper "_XENAKIOS_NUDMASVOL1DBD"
+	Shift+RotarySmallLeftFast Reaper "_XENAKIOS_NUDMASVOL1DBD"
+	Shift+RotarySmallRight Reaper "40743"
+	Shift+RotarySmallRightMid Reaper "_XENAKIOS_NUDMASVOL1DBU"
+	Shift+RotarySmallRightFast Reaper "_XENAKIOS_NUDMASVOL1DBU"
+
+	RotarySmallPush Reaper "_SWS_TOGSELMASTER" // Select master track
+	Shift+RotarySmallPush Reaper "40917" // Set/Unset Master track to mono
+
+
+	Arm		     Reaper "9"
+	//Shift+Arm    Reaper "40490"  // arms      ALL tracks
+	//Alt+Arm      Reaper "40491"  // disarms   ALL tracks
+	SoloClear    Reaper "40340"  // unsolo    ALL tracks
+	MuteClear    Reaper "40339"  // unmute    ALL tracks
+
+	/Bypass       NoAction  {  50 50 50 127 127 127 }
+	Bypass       Reaper "8"
+
+	Macro              Reaper "41749" // Show/Hide FX #1 UI
+	Shift+Macro        Reaper "_8a8c441c06c841e9b8d215d598db31dc"
+	// Custom Action : SWS:Close all floating FX windows
+	//								 SWS:Close all FX chain windows
+	Link               Reaper "_S&M_TOGLFXCHAIN" // Show FX Chain
+	Hold+Link         Reaper "_RSd23f63713133d507d42bb2fa247b6e189260be46"
+	// Script: mpl_Open FX browser and close FX browser when FX is inserted.lua
+
+	AudioBtn      Reaper "40297" //Unselect all tracks
+	Hold+AudioBtn Reaper "40296" //Select all tracks
+	Instrument    Reaper "40527"  // clear peak saturations
+	BusBtn        Reaper "40290" // Set time selection to items
+	VCABtn        ToggleVCAMode { 10 2 2 127 20 20 }  // shows/hides VCA masters
+  AllBtn	      Reaper "_SWS_SELULI" {  0 0 0 30 30 30 }
+ZoneEnd

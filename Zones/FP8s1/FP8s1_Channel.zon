@@ -1,0 +1,20 @@
+Zone "Channel"
+    TrackNavigator
+	
+    FPDisplayA|    TrackNameDisplay
+    FPDisplayB|    TrackVolumeDisplay
+    FPDisplayC|    TrackPanDisplay
+    FPDisplayD|    TrackOutputMeter // this can do levels
+				  
+    Solo|            TrackSolo
+    Mute|            TrackMute
+    Fader|           TrackVolume
+    Alt+Fader|       TrackPan "0"
+    Alt+Shift+Fader| TrackPanWidth "1"
+				  
+	Select|        TrackUniqueSelect   { 2 10 2  30 127 30 }
+    Shift+Select|  TrackSelect    { 2 10 2  30 127 30 }
+    Alt+Select|    TrackRangeSelect         { 2 10 2  30 127 30 }
+    //Hold+Select|   TrackInvertPolarity //Shows unexpected behaviour
+	
+ZoneEnd

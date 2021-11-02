@@ -1,0 +1,11 @@
+Zone "SelectedTrackSend"
+  SelectedTrackSendNavigator
+  FPDisplayA|             FixedTextDisplay "Send"
+  FPDisplayB|             TrackSendVolumeDisplay
+  FPDisplayC|             TrackSendNameDisplay  // only displays 4-6 characters
+  FPDisplayD|             NoAction
+  Fader|                  TrackSendVolume
+  Mute|                   TrackSendMute // only works with trim/read send mutes, not the automatable ones
+  BankLeft                TrackSendBank "-8"
+  BankRight               TrackSendBank "8"
+ZoneEnd

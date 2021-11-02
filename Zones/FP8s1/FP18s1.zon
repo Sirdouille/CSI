@@ -1,0 +1,10 @@
+Zone "Home"
+    IncludedZones
+        "Buttons"
+        "Channel"
+        "AutomationButtons"
+    IncludedZonesEnd
+// OnTrackSelection  MapSelectedTrackSendsToWidgets
+// OnTrackSelection  MapSelectedTrackFXToMenu
+
+ZoneEnd

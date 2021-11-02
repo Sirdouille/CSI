@@ -1,0 +1,733 @@
+/ MST file for the Control Surface Integrator
+/ for the Presonus FADERPORT 8 in Studio One mode
+/
+/
+/ ## Button column right of faders, top to bottom
+Widget Track
+        Press 90 28 7f
+  FB_TwoState 90 28 7f 90 28 00
+WidgetEnd
+Widget Plugin
+        Press 90 2b 7f
+  //FB_TwoState 90 2b 7f 90 2b 00
+WidgetEnd
+Widget Send
+        Press 90 29 7f 90 29 00
+  FB_TwoState 90 29 7f 90 29 00
+WidgetEnd
+Widget Pan
+        Press 90 2a 7f 90 2a 00
+  FB_TwoState 90 2a 7f 90 2a 00
+WidgetEnd
+
+/ buttons can be any colour down here
+Widget AudioBtn
+  Press 90 3e 7f 90 3e 00
+  //FB_FaderportRGB7Bit 90 3e 7f
+WidgetEnd
+Widget Instrument
+                Press 90 3f 7f
+  FB_FaderportRGB7Bit 90 3f 7f
+WidgetEnd
+Widget BusBtn
+                Press 90 40 7f
+  FB_FaderportRGB7Bit 90 40 7f
+WidgetEnd
+Widget VCABtn
+                Press 90 41 7f
+  FB_FaderportRGB7Bit 90 41 7f
+WidgetEnd
+Widget AllBtn
+                Press 90 42 7f
+  FB_FaderportRGB7Bit 90 42 7f
+WidgetEnd
+
+
+Widget ShiftRight
+  Press 90 06 7f 90 06 00
+  FB_TwoState 90 06 7f 90 06 00
+WidgetEnd
+
+
+
+/ ## Button column left of faders
+Widget Arm
+        Press 90 00 7f
+  FB_TwoState 90 00 7f 90 00 00
+WidgetEnd
+Widget SoloClear
+  Press 90 01 7f
+WidgetEnd
+Widget MuteClear
+  Press 90 02 7f
+WidgetEnd
+
+
+Widget Bypass
+  Press 90 03 7f 90 03 00
+  FB_TwoState 90 03 7f 90 03 00
+WidgetEnd
+Widget Macro
+  Press 90 04 7f
+WidgetEnd
+Widget Link
+   Press 90 05 7f 90 05 00
+  //FB_FaderportRGB7Bit 90 05 7f
+WidgetEnd
+
+Widget ShiftLeft
+  Press 90 46 7f 90 46 00
+  FB_TwoState 90 46 7f 90 46 00
+WidgetEnd
+
+
+
+/ ## Automation buttons above large rotary ##
+Widget Read
+                Press 90 4a 7f
+  FB_FaderportRGB7Bit 90 4a 7f
+WidgetEnd
+Widget Write
+                Press 90 4b 7f
+  FB_FaderportRGB7Bit 90 4b 7f
+WidgetEnd
+Widget Trim
+                Press 90 4c 7f
+  FB_FaderportRGB7Bit 90 4c 7f
+WidgetEnd
+Widget Touch
+                Press 90 4d 7f
+  FB_FaderportRGB7Bit 90 4d 7f
+WidgetEnd
+Widget Latch
+                Press 90 4e 7f
+  FB_FaderportRGB7Bit 90 4e 7f
+WidgetEnd
+Widget Off
+                Press 90 4f 7f
+  FB_FaderportRGB7Bit 90 4f 7f
+WidgetEnd
+
+
+
+
+/ ## Rotaries ##
+// Widget RotarySmall
+// 	   Encoder b0 10 7f
+// /	FB_Encoder b0 10 7f // no feedback display of any kind
+// /	    Toggle b0 20 7f
+// WidgetEnd
+ Widget RotarySmallRight
+  Press b0 10 00
+  Press b0 10 01
+  Press b0 10 02
+  Press b0 10 03
+  Press b0 10 04
+  Press b0 10 05
+  Press b0 10 06
+  Press b0 10 07
+  Press b0 10 08
+  Press b0 10 09
+  Press b0 10 0a
+  Press b0 10 0b
+  Press b0 10 0c
+  Press b0 10 0d
+  Press b0 10 0e
+  Press b0 10 0f
+WidgetEnd
+Widget RotarySmallRightMid
+  Press b0 10 10
+  Press b0 10 11
+  Press b0 10 12
+  Press b0 10 13
+  Press b0 10 14
+  Press b0 10 15
+  Press b0 10 16
+  Press b0 10 17
+  Press b0 10 18
+  Press b0 10 19
+  Press b0 10 1a
+  Press b0 10 1b
+  Press b0 10 1c
+  Press b0 10 1d
+  Press b0 10 1e
+  Press b0 10 1f
+  Press b0 10 20
+  Press b0 10 21
+  Press b0 10 22
+  Press b0 10 23
+  Press b0 10 24
+  Press b0 10 25
+  Press b0 10 26
+  Press b0 10 27
+  Press b0 10 28
+  Press b0 10 29
+  Press b0 10 2a
+  Press b0 10 2b
+  Press b0 10 2c
+  Press b0 10 2d
+  Press b0 10 2e
+  Press b0 10 2f
+WidgetEnd
+Widget RotarySmallRightFast
+  Press b0 10 30
+  Press b0 10 31
+  Press b0 10 32
+  Press b0 10 33
+  Press b0 10 34
+  Press b0 10 35
+  Press b0 10 36
+  Press b0 10 37
+  Press b0 10 38
+  Press b0 10 39
+  Press b0 10 3a
+  Press b0 10 3b
+  Press b0 10 3c
+  Press b0 10 3d
+  Press b0 10 3e
+  Press b0 10 3f
+WidgetEnd
+Widget RotarySmallLeftFast
+  Press b0 10 70
+  Press b0 10 71
+  Press b0 10 72
+  Press b0 10 73
+  Press b0 10 74
+  Press b0 10 75
+  Press b0 10 76
+  Press b0 10 77
+  Press b0 10 78
+  Press b0 10 79
+  Press b0 10 7a
+  Press b0 10 7b
+  Press b0 10 7c
+  Press b0 10 7d
+  Press b0 10 7e
+  Press b0 10 7f
+WidgetEnd
+Widget RotarySmallLeftMid
+  Press b0 10 50
+  Press b0 10 51
+  Press b0 10 52
+  Press b0 10 53
+  Press b0 10 54
+  Press b0 10 55
+  Press b0 10 56
+  Press b0 10 57
+  Press b0 10 58
+  Press b0 10 59
+  Press b0 10 5a
+  Press b0 10 5b
+  Press b0 10 5c
+  Press b0 10 5d
+  Press b0 10 5e
+  Press b0 10 5f
+  Press b0 10 60
+  Press b0 10 61
+  Press b0 10 62
+  Press b0 10 63
+  Press b0 10 64
+  Press b0 10 65
+  Press b0 10 66
+  Press b0 10 67
+  Press b0 10 68
+  Press b0 10 69
+  Press b0 10 6a
+  Press b0 10 6b
+  Press b0 10 6c
+  Press b0 10 6d
+  Press b0 10 6e
+  Press b0 10 6f
+WidgetEnd
+Widget RotarySmallLeft
+  Press b0 10 40
+  Press b0 10 41
+  Press b0 10 42
+  Press b0 10 43
+  Press b0 10 44
+  Press b0 10 45
+  Press b0 10 46
+  Press b0 10 47
+  Press b0 10 48
+  Press b0 10 49
+  Press b0 10 4a
+  Press b0 10 4b
+  Press b0 10 4c
+  Press b0 10 4d
+  Press b0 10 4e
+  Press b0 10 4f
+WidgetEnd
+Widget RotarySmallPush
+  Press 90 20 7f
+WidgetEnd
+Widget RotaryBigRight
+  Press b0 3c 00
+  Press b0 3c 01
+  Press b0 3c 02
+  Press b0 3c 03
+  Press b0 3c 04
+  Press b0 3c 05
+  Press b0 3c 06
+  Press b0 3c 07
+  Press b0 3c 08
+  Press b0 3c 09
+  Press b0 3c 0a
+  Press b0 3c 0b
+  Press b0 3c 0c
+  Press b0 3c 0d
+  Press b0 3c 0e
+  Press b0 3c 0f
+WidgetEnd
+Widget RotaryBigRightMid
+  Press b0 3c 10
+  Press b0 3c 11
+  Press b0 3c 12
+  Press b0 3c 13
+  Press b0 3c 14
+  Press b0 3c 15
+  Press b0 3c 16
+  Press b0 3c 17
+  Press b0 3c 18
+  Press b0 3c 19
+  Press b0 3c 1a
+  Press b0 3c 1b
+  Press b0 3c 1c
+  Press b0 3c 1d
+  Press b0 3c 1e
+  Press b0 3c 1f
+  Press b0 3c 20
+  Press b0 3c 21
+  Press b0 3c 22
+  Press b0 3c 23
+  Press b0 3c 24
+  Press b0 3c 25
+  Press b0 3c 26
+  Press b0 3c 27
+  Press b0 3c 28
+  Press b0 3c 29
+  Press b0 3c 2a
+  Press b0 3c 2b
+  Press b0 3c 2c
+  Press b0 3c 2d
+  Press b0 3c 2e
+  Press b0 3c 2f
+WidgetEnd
+Widget RotaryBigRightFast
+  Press b0 3c 30
+  Press b0 3c 31
+  Press b0 3c 32
+  Press b0 3c 33
+  Press b0 3c 34
+  Press b0 3c 35
+  Press b0 3c 36
+  Press b0 3c 37
+  Press b0 3c 38
+  Press b0 3c 39
+  Press b0 3c 3a
+  Press b0 3c 3b
+  Press b0 3c 3c
+  Press b0 3c 3d
+  Press b0 3c 3e
+  Press b0 3c 3f
+WidgetEnd
+Widget RotaryBigLeftFast
+  Press b0 3c 70
+  Press b0 3c 71
+  Press b0 3c 72
+  Press b0 3c 73
+  Press b0 3c 74
+  Press b0 3c 75
+  Press b0 3c 76
+  Press b0 3c 77
+  Press b0 3c 78
+  Press b0 3c 79
+  Press b0 3c 7a
+  Press b0 3c 7b
+  Press b0 3c 7c
+  Press b0 3c 7d
+  Press b0 3c 7e
+  Press b0 3c 7f
+WidgetEnd
+Widget RotaryBigLeftMid
+  Press b0 3c 50
+  Press b0 3c 51
+  Press b0 3c 52
+  Press b0 3c 53
+  Press b0 3c 54
+  Press b0 3c 55
+  Press b0 3c 56
+  Press b0 3c 57
+  Press b0 3c 58
+  Press b0 3c 59
+  Press b0 3c 5a
+  Press b0 3c 5b
+  Press b0 3c 5c
+  Press b0 3c 5d
+  Press b0 3c 5e
+  Press b0 3c 5f
+  Press b0 3c 60
+  Press b0 3c 61
+  Press b0 3c 62
+  Press b0 3c 63
+  Press b0 3c 64
+  Press b0 3c 65
+  Press b0 3c 66
+  Press b0 3c 67
+  Press b0 3c 68
+  Press b0 3c 69
+  Press b0 3c 6a
+  Press b0 3c 6b
+  Press b0 3c 6c
+  Press b0 3c 6d
+  Press b0 3c 6e
+  Press b0 3c 6f
+WidgetEnd
+Widget RotaryBigLeft
+  Press b0 3c 40
+  Press b0 3c 41
+  Press b0 3c 42
+  Press b0 3c 43
+  Press b0 3c 44
+  Press b0 3c 45
+  Press b0 3c 46
+  Press b0 3c 47
+  Press b0 3c 48
+  Press b0 3c 49
+  Press b0 3c 4a
+  Press b0 3c 4b
+  Press b0 3c 4c
+  Press b0 3c 4d
+  Press b0 3c 4e
+  Press b0 3c 4f
+WidgetEnd
+Widget RotaryBigPush
+  Press 90 53 7f
+WidgetEnd
+
+/ ## Buttons around large rotary ##
+Widget Prev
+  Press 90 2E 7f
+WidgetEnd
+Widget Next
+  Press 90 2F 7f
+WidgetEnd
+
+
+
+/ ## 2.Row of buttons above transport ##
+Widget Channel
+        Press 90 36 7f 90 36 00
+  //FB_TwoState 90 36 7f 90 36 00
+WidgetEnd
+Widget Zoom
+        Press 90 37 7f 90 37 00
+  FB_TwoState 90 37 7f 90 37 00
+WidgetEnd
+Widget Scroll
+        Press 90 38 7f 90 38 00
+  FB_TwoState 90 38 7f 90 38 00
+WidgetEnd
+Widget Bank
+        Press 90 39 7f 90 39 00
+  //FB_TwoState 90 39 7f 90 39 00
+WidgetEnd
+
+
+
+/ ## 1.Row of buttons above transport ##
+Widget Master
+  Press       90 3a 7f 90 3a 00
+  FB_TwoState 90 3a 7f 90 3a 00
+WidgetEnd
+Widget Click
+        Press 90 3b 7f 90 3b 00
+  FB_TwoState 90 3b 7f 90 3b 00
+WidgetEnd
+Widget Section
+        Press 90 3c 7f 90 3c 00
+  FB_TwoState 90 3c 7f 90 3c 00
+WidgetEnd
+Widget Marker
+        Press 90 3d 7f
+  //FB_TwoState 90 3d 7f 90 3d 00
+WidgetEnd
+
+
+/ ## Transport ##
+Widget Cycle
+        Press 90 56 7f
+  FB_TwoState 90 56 7f 90 56 00
+WidgetEnd
+Widget Rewind
+        Press 90 5b 7f
+  /FB_TwoState 90 5b 7f 90 5b 00
+WidgetEnd
+Widget FastForward
+        Press 90 5c 7f
+  /FB_TwoState 90 5c 7f 90 5c 00
+WidgetEnd
+Widget Stop
+        Press 90 5d 7f 90 5d 00
+  FB_TwoState 90 5d 7f 90 5d 00
+WidgetEnd
+Widget Play
+        Press 90 5e 7f
+  FB_TwoState 90 5e 7f 90 5e 00
+WidgetEnd
+Widget Record
+        Press 90 5f 7f
+  FB_TwoState 90 5f 7f 90 5f 00
+WidgetEnd
+
+
+
+/ ## FADERS ##
+Widget Fader1
+     Fader14Bit e0 7f 7f
+  FB_Fader14Bit e0 7f 7f
+          Touch 90 68 7f 90 68 00
+WidgetEnd
+Widget Fader2
+     Fader14Bit e1 7f 7f
+  FB_Fader14Bit e1 7f 7f
+          Touch 90 69 7f 90 69 00
+WidgetEnd
+Widget Fader3
+     Fader14Bit e2 7f 7f
+  FB_Fader14Bit e2 7f 7f
+          Touch 90 6a 7f 90 6a 00
+WidgetEnd
+Widget Fader4
+     Fader14Bit e3 7f 7f
+  FB_Fader14Bit e3 7f 7f
+          Touch 90 6b 7f 90 6b 00
+WidgetEnd
+Widget Fader5
+     Fader14Bit e4 7f 7f
+  FB_Fader14Bit e4 7f 7f
+          Touch 90 6c 7f 90 6c 00
+WidgetEnd
+Widget Fader6
+     Fader14Bit e5 7f 7f
+  FB_Fader14Bit e5 7f 7f
+          Touch 90 6d 7f 90 6d 00
+WidgetEnd
+Widget Fader7
+     Fader14Bit e6 7f 7f
+  FB_Fader14Bit e6 7f 7f
+          Touch 90 6e 7f 90 6e 00
+WidgetEnd
+Widget Fader8
+     Fader14Bit e7 7f 7f
+  FB_Fader14Bit e7 7f 7f
+          Touch 90 6f 7f 90 6f 00
+WidgetEnd
+
+
+
+Widget Solo1
+        Press 90 08 7f
+  FB_TwoState 90 08 7f 90 08 00
+WidgetEnd
+Widget Solo2
+        Press 90 09 7f
+  FB_TwoState 90 09 7f 90 09 00
+WidgetEnd
+Widget Solo3
+        Press 90 0a 7f
+  FB_TwoState 90 0a 7f 90 0a 00
+WidgetEnd
+Widget Solo4
+        Press 90 0b 7f
+  FB_TwoState 90 0b 7f 90 0b 00
+WidgetEnd
+Widget Solo5
+        Press 90 0c 7f
+  FB_TwoState 90 0c 7f 90 0c 00
+WidgetEnd
+Widget Solo6
+        Press 90 0d 7f
+  FB_TwoState 90 0d 7f 90 0d 00
+WidgetEnd
+Widget Solo7
+        Press 90 0e 7f
+  FB_TwoState 90 0e 7f 90 0e 00
+WidgetEnd
+Widget Solo8
+        Press 90 0f 7f
+  FB_TwoState 90 0f 7f 90 0f 00
+WidgetEnd
+
+
+
+Widget Mute1
+        Press 90 10 7f
+  FB_TwoState 90 10 7f 90 10 00
+WidgetEnd
+Widget Mute2
+        Press 90 11 7f
+  FB_TwoState 90 11 7f 90 11 00
+WidgetEnd
+Widget Mute3
+        Press 90 12 7f
+  FB_TwoState 90 12 7f 90 12 00
+WidgetEnd
+Widget Mute4
+        Press 90 13 7f
+  FB_TwoState 90 13 7f 90 13 00
+WidgetEnd
+Widget Mute5
+        Press 90 14 7f
+  FB_TwoState 90 14 7f 90 14 00
+WidgetEnd
+Widget Mute6
+        Press 90 15 7f
+  FB_TwoState 90 15 7f 90 15 00
+WidgetEnd
+Widget Mute7
+        Press 90 16 7f
+  FB_TwoState 90 16 7f 90 16 00
+WidgetEnd
+Widget Mute8
+        Press 90 17 7f
+  FB_TwoState 90 17 7f 90 17 00
+WidgetEnd
+
+
+Widget Select1
+                Press 90 18 7f
+  FB_FaderportRGB7Bit 90 18 7f
+WidgetEnd
+Widget Select2
+                Press 90 19 7f
+  FB_FaderportRGB7Bit 90 19 7f
+WidgetEnd
+Widget Select3
+                Press 90 1a 7f
+  FB_FaderportRGB7Bit 90 1a 7f
+WidgetEnd
+Widget Select4
+                Press 90 1b 7f
+  FB_FaderportRGB7Bit 90 1b 7f
+WidgetEnd
+Widget Select5
+                Press 90 1c 7f
+  FB_FaderportRGB7Bit 90 1c 7f
+WidgetEnd
+Widget Select6
+                Press 90 1d 7f
+  FB_FaderportRGB7Bit 90 1d 7f
+WidgetEnd
+Widget Select7
+                Press 90 1e 7f
+  FB_FaderportRGB7Bit 90 1e 7f
+WidgetEnd
+Widget Select8
+                Press 90 1f 7f
+  FB_FaderportRGB7Bit 90 1f 7f
+WidgetEnd
+
+
+
+Widget FPDisplayA1
+  FB_FP8DisplayUpper "0"
+WidgetEnd
+Widget FPDisplayA2
+  FB_FP8DisplayUpper "1"
+WidgetEnd
+Widget FPDisplayA3
+  FB_FP8DisplayUpper "2"
+WidgetEnd
+Widget FPDisplayA4
+  FB_FP8DisplayUpper "3"
+WidgetEnd
+Widget FPDisplayA5
+  FB_FP8DisplayUpper "4"
+WidgetEnd
+Widget FPDisplayA6
+  FB_FP8DisplayUpper "5"
+WidgetEnd
+Widget FPDisplayA7
+  FB_FP8DisplayUpper "6"
+WidgetEnd
+Widget FPDisplayA8
+  FB_FP8DisplayUpper "7"
+WidgetEnd
+
+
+Widget FPDisplayB1
+  FB_FP8DisplayUpperMiddle "0"
+WidgetEnd
+Widget FPDisplayB2
+  FB_FP8DisplayUpperMiddle "1"
+WidgetEnd
+Widget FPDisplayB3
+  FB_FP8DisplayUpperMiddle "2"
+WidgetEnd
+Widget FPDisplayB4
+  FB_FP8DisplayUpperMiddle "3"
+WidgetEnd
+Widget FPDisplayB5
+  FB_FP8DisplayUpperMiddle "4"
+WidgetEnd
+Widget FPDisplayB6
+  FB_FP8DisplayUpperMiddle "5"
+WidgetEnd
+Widget FPDisplayB7
+  FB_FP8DisplayUpperMiddle "6"
+WidgetEnd
+Widget FPDisplayB8
+  FB_FP8DisplayUpperMiddle "7"
+WidgetEnd
+
+
+Widget FPDisplayC1
+  FB_FP8DisplayLowerMiddle "0"
+WidgetEnd
+Widget FPDisplayC2
+  FB_FP8DisplayLowerMiddle "1"
+WidgetEnd
+Widget FPDisplayC3
+  FB_FP8DisplayLowerMiddle "2"
+WidgetEnd
+Widget FPDisplayC4
+  FB_FP8DisplayLowerMiddle "3"
+WidgetEnd
+Widget FPDisplayC5
+  FB_FP8DisplayLowerMiddle "4"
+WidgetEnd
+Widget FPDisplayC6
+  FB_FP8DisplayLowerMiddle "5"
+WidgetEnd
+Widget FPDisplayC7
+  FB_FP8DisplayLowerMiddle "6"
+WidgetEnd
+Widget FPDisplayC8
+  FB_FP8DisplayLowerMiddle "7"
+WidgetEnd
+
+
+Widget FPDisplayD1
+  FB_FP8DisplayLower "0"
+WidgetEnd
+Widget FPDisplayD2
+  FB_FP8DisplayLower "1"
+WidgetEnd
+Widget FPDisplayD3
+  FB_FP8DisplayLower "2"
+WidgetEnd
+Widget FPDisplayD4
+  FB_FP8DisplayLower "3"
+WidgetEnd
+Widget FPDisplayD5
+  FB_FP8DisplayLower "4"
+WidgetEnd
+Widget FPDisplayD6
+  FB_FP8DisplayLower "5"
+WidgetEnd
+Widget FPDisplayD7
+  FB_FP8DisplayLower "6"
+WidgetEnd
+Widget FPDisplayD8
+  FB_FP8DisplayLower "7"
+WidgetEnd

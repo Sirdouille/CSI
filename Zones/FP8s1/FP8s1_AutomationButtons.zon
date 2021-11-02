@@ -1,0 +1,24 @@
+Zone "AutomationButtons"
+ SelectedTrackNavigator
+  Read         TrackAutoMode 1  { 0 4 0  0 96 0 }
+  Write        TrackAutoMode 3  { 4 0 0  127 0 0 }
+  Trim         TrackAutoMode 0  { 1 3 3  127 127 127 }
+  Touch        TrackAutoMode 2  { 2 3 0  112 112 00 }
+  Latch        TrackAutoMode 4  { 4 0 4  96 0 96 }
+  Off          TrackAutoMode 5  { 0 0 10 0 32 127 }
+ 
+  Shift+Read   GlobalAutoMode "1" { 0 4 0  0 96 0 }
+  Shift+Write  GlobalAutoMode "3" { 4 0 0  127 0 0 }
+  Shift+Trim   GlobalAutoMode "0" { 1 3 3  127 127 127 }
+  Shift+Touch  GlobalAutoMode "2" { 2 3 0  112 112 00 }
+  Shift+Latch  GlobalAutoMode "4" { 4 0 4  96 0 96 }
+  Shift+Off    GlobalAutoMode "5" { 0 0 10 0 32 127 }
+  Shift+Pan    Reaper "40876" // GlobalAuto off
+
+  Alt+Read     Reaper "40086" { 0 4 0  0 96 0 }
+  Alt+Write    Reaper "40090" { 4 0 0  127 0 0 }
+  Alt+Trim     Reaper "40088" { 1 3 3  127 127 127 }
+  Alt+Touch    Reaper "40087" { 2 3 0  112 112 00 }
+  Alt+Latch    Reaper "40266" { 4 0 4  96 0 96 }
+  Alt+Off      Reaper "42024" { 0 0 10 0 32 127 }
+ZoneEnd

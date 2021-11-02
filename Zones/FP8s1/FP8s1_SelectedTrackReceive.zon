@@ -1,0 +1,10 @@
+Zone "SelectedTrackReceive"
+  SelectedTrackReceiveNavigator
+  FPDisplayA|             TrackNameDisplay
+  FPDisplayB|             TrackReceiveVolumeDisplay
+  FPDisplayC|             TrackReceiveNameDisplay
+  Fader|                  TrackReceiveVolume
+  Mute|                   TrackReceiveMute
+  BankLeft                ReceiveSlotBank "-8"
+  BankRight               ReceiveSlotBank "8"
+ZoneEnd 
